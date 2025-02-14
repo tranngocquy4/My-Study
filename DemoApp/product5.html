@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <script src="https://kit.fontawesome.com/ac508f10cf.js" crossorigin="anonymous"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Be+Vietnam+Pro:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900&display=swap" rel="stylesheet">
+    <style>
+        *{
+            font-family: "Be Vietnam Pro", sans-serif;
+        }
+        .header {
+            width: 100%;
+            height: 50px;
+            display: flex;
+            justify-content: space-around;
+        }
+        .header input {
+            border-top-style: hidden;
+            border-right-style: hidden;
+            border-left-style: hidden;
+        }
+        .quantity-control {
+            display: flex;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .quantity-control button {
+            width: 30px;
+            height: 30px;
+            cursor: pointer;
+            background-color: #8a6c1c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            margin: 0 5px;
+        }
+        .quantity-control input {
+            width: 40px;
+            text-align: center;
+            font-size: 18px;
+        }
+        .price {
+            margin-top: 20px;
+            font-size: 20px;
+        }
+        .buy-button {
+            cursor: pointer;
+            margin-top: 20px;
+            padding: 10px 20px;
+            background-color: #8a6c1c;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 16px;
+        }
+    </style>
+</head>
+<body>
+    <div class="header" style="background-color: #c69a39;">
+        <h3 style="margin-top: 13px; color: white;">Điện Thoại Vui</h3>
+        <div style="display: flex;">
+            <input type="search" placeholder="Tìm kiếm sản phẩm ..." style=" width: 300px; height: 30px; border-radius: 5px; margin-top: 11px; border: 1px white;">
+            <div style="padding-top: 15px;">
+                <i class="fa-solid fa-magnifying-glass"></i>
+            </div>
+        </div>
+        <div class="div" style="margin-top: 5px;">
+            <button style="cursor:pointer; width: 100px; height: 40px; border-radius: 5px; background-color:#8a6c1c; border: 1px #8a6c1c; color: #fff;">Đăng nhập</button>
+            <button style="cursor:pointer; width: 100px; height: 40px; border-radius: 5px; background-color:#8a6c1c; border: 1px #8a6c1c; color: #fff;">Đăng kí</button>
+        </div>
+    </div>
+
+    <div style="display: flex; margin-left: 40px;">
+        <div>
+            <div style="display: flex; width: 581.5px; height: 50px; border: 1px solid rgb(204, 203, 203); margin-top: 20px;">
+                <b><p style="padding-left: 220px;">Thông số kỹ thuật</p></b>
+            </div>
+            <!-- Technical specifications here -->
+            <div style="display: flex;">
+                <div style="width: 180px; height: 90px; border: 1px solid rgb(204, 203, 203);">
+                    <b>
+                        <p style="padding-top: 20px; padding-left: 5px;">Màn hình :</p>
+                    </b>
+                </div>
+                <div style="width: 400px; height: 90px; border: 1px solid rgb(204, 203, 203);">
+                    <p style="padding-left: 5px;" >Liquid Retina IPS LCD, 625 nits
+                        6.1 inches, HD+ (828 x 1792 pixels), tỷ lệ 19.5:9
+                        Kính chống xước, phủ oleophobic</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 180px; height: 50px; border: 1px solid rgb(204, 203, 203);">
+                    <b>
+                        <p>Hệ điều hành:	</p>
+                    </b>
+                </div>
+                <div style="width: 400px; height: 50px; border: 1px solid rgb(204, 203, 203)">
+                    <p style="padding-left: 5px; ">iOS 13, được cập nhật lên iOS 15.3</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 180px; height: 100px; border: 1px solid rgb(204, 203, 203)">
+                    <b>
+                        <p style="padding-top: 22px; padding-left: 5px;">Camera sau:	</p>
+                    </b>
+                </div>
+                <div style="width: 400px; height: 100px;border: 1px solid rgb(204, 203, 203)">
+                    <p style="padding-left: 5px;">12 MP, f / 1.8, 26mm (góc rộng)
+                        12 MP, f / 2.4, 120˚, 13mm (góc siêu rộng)
+                        Quay phim: 4K@24/30/60fps, 1080p@30/60/120/240fps, HDR, ghi âm stereo</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 180px; height: 90px; border: 1px solid rgb(204, 203, 203)">
+                    <b>
+                        <p style="padding-top: 20px; padding-left: 5px;">Camera trước:	</p>
+                    </b>
+                </div>
+                <div style="width: 400px; height: 90px; border: 1px solid rgb(204, 203, 203)">
+                    <p style="padding-left: 5px;">12 MP, f/2.2, 23mm (góc rộng)
+                        Quay phim: 4K@24/30/60fps, 1080p@30/60/120fps, gyro-EIS</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 180px; height: 80px; border: 1px solid rgb(204, 203, 203)">
+                    <b>
+                        <p style="padding-left: 5px; padding-top: 14px;">CPU :</p>
+                    </b>
+                </div>
+                <div style="width: 400px; height: 80px; border: 1px solid rgb(204, 203, 203)">
+                    <p style="padding-left: 5px;">	Apple A13 Bionic (7 nm+)
+                        6 nhân (2x2.65 GHz + 4x1.8 GHz)
+                        GPU: Apple GPU (4 nhân đồ họa)</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 180px; height: 50px; border: 1px solid rgb(204, 203, 203)">
+                    <b>
+                        <p style=" padding-left: 5px;">RAM :</p>
+                    </b>
+                </div>
+                <div style="width: 400px; height: 50px;border: 1px solid rgb(204, 203, 203)">
+                    <p style="padding-left: 5px;">4GB
+                    </p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 180px; height: 50px; border: 1px solid rgb(204, 203, 203)">
+                    <b>
+                        <p style="padding-left: 5px;">Bộ nhớ trong:	</p>
+                    </b>
+                </div>
+                <div style="width: 400px; height: 50px; border: 1px solid rgb(204, 203, 203)">
+                    <p style="padding-left: 5px;">64-256GB NVMe</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 180px; height: 70px; border: 1px solid rgb(204, 203, 203)">
+                    <b>
+                        <p style="padding-top: 10px; padding-left: 5px;">Dung lượng pin :</p>
+                    </b>
+                </div>
+                <div style="width: 400px; height: 70px;border: 1px solid rgb(204, 203, 203)">
+                    <p style="padding-left: 5px;">	Li-Ion 3110 mAh
+                        Sạc nhanh 18W, 50% trong 30 phút (quảng cáo)
+                        Sạc không dây Qi</p>
+                </div>
+            </div>
+            <div style="display: flex;">
+                <div style="width: 180px; height: 50px; border: 1px solid rgb(204, 203, 203)">
+                    <b>
+                        <p style=" padding-left: 5px;">Thẻ SIM :</p>
+                    </b>
+                </div>
+                <div style="width: 400px; height: 50px;border: 1px solid rgb(204, 203, 203)">
+                    <p style="padding-left: 5px;">	Nano-SIM/eSIM</p>
+                </div>
+            </div>
+            <div class="quantity-control">
+                <button id="decreaseBtn">-</button>
+                <input type="text" id="quantity" value="1" readonly>
+                <button id="increaseBtn">+</button>
+            </div>
+            <div class="price">
+                Giá: <span id="totalPrice">8,750,000</span> VND
+            </div>
+            <button class="buy-button" id="buyBtn">Mua</button>
+
+        </div>
+
+        <div style="margin-top: 20px; padding-left: 30px;">
+            <p>Điện thoại iPhone 12 Pro Chính hãng VN/A</p>
+            <img src="iphone-12-pro-vang.jpg" alt="">
+        </div>
+    </div>
+
+    <div style="height: 35px; margin-left: 39px; margin-top: 20px;">
+        <a href="index.html">Trở lại trang chủ</a>
+    </div>
+
+    <hr>
+
+    <div class="footer" style="width: 100%; height: 200px; display: flex; background-color: #c69a39;">
+        <div style="width: 300px; display: flex; flex-direction:column ; align-items:start; padding-left: 60px;">
+            <p style="font-size: 20px;">
+                <b>
+                    Chăm sóc khách hàng
+                </b>
+            </p>
+            <a style="text-decoration: none ;color: black;" href="#" >Trung tâm trợ giúp</a>
+            <a style="text-decoration: none ;color: black;" href="#">Liên hệ chúng tôi</a>
+            <a style="text-decoration: none ;color: black;" href="#">Trả hàng & Hoàn tiền</a>
+            <a style="text-decoration: none ;color: black;" href="#">Liên hệ với chúng tôi</a>
+            <a style="text-decoration: none;color: black;" href="#">Chính sách bảo hành</a>
+        </div>
+        <div style="width: 300px; display: flex; flex-direction:column ; align-items:start; padding-left: 250px;">
+            <p style="font-size: 20px;">
+                <b>
+                    Về chúng tôi
+                </b>
+            </p>
+            <a style="text-decoration: none;color: black;" href="#" >Giới thiệu</a>
+            <a style="text-decoration: none;color: black;" href="#">Tuyển dụng</a>
+            <a style="text-decoration: none;color: black;" href="#">Điều khoả<nav></nav></a>
+            <a style="text-decoration: none;color: black;" href="#">Chính sách bảo mật</a>
+            <a style="text-decoration: none;color: black;" href="#">Chính hãng</a>
+            <a style="text-decoration: none;color: black;" href="#">Kênh người bán</a>
+
+        </div>
+        <div style="width: 300px; display: flex; flex-direction:column ; align-items:start; padding-left: 300px;">
+            <p style="font-size: 20px;">
+                <b>
+                    Theo dõi chúng tôi trên:
+                </b>
+            </p>
+            <span> <i class="fa-brands fa-facebook" style="color: blue;"></i> <a style="text-decoration: none; color: blue;" href="#" >Facebook</a> </span>
+            <span> <i class="fa-brands fa-twitter" style="color: rgb(82, 82, 248);"></i> <a style="text-decoration: none; color:rgb(82, 82, 248) ;" href="#">Twitter</a></span>
+            <span> <i class="fa-brands fa-instagram" style="color: rgb(250, 0, 250);"></i> <a style="text-decoration: none; color: rgb(250, 0, 250)" href="#">Instagram</a></span>
+            <span> <i class="fa-brands fa-linkedin" style="color: aqua;"> <a style="text-decoration: none; color: aqua" href="#">LinkedIn</a></i></span>
+        </div>
+    </div>
+
+    <script>
+        const increaseBtn = document.getElementById("increaseBtn");
+        const decreaseBtn = document.getElementById("decreaseBtn");
+        const quantityInput = document.getElementById("quantity");
+        const totalPriceElement = document.getElementById("totalPrice");
+
+        const pricePerPhone = 8750000;
+
+        increaseBtn.addEventListener("click", () => {
+            let quantity = parseInt(quantityInput.value);
+            quantity++;
+            quantityInput.value = quantity;
+            updatePrice(quantity);
+        });
+
+        decreaseBtn.addEventListener("click", () => {
+            let quantity = parseInt(quantityInput.value);
+            if (quantity > 1) {
+                quantity--;
+                quantityInput.value = quantity;
+                updatePrice(quantity);
+            }
+        });
+
+        function updatePrice(quantity) {
+            const totalPrice = pricePerPhone * quantity;
+            totalPriceElement.textContent = totalPrice.toLocaleString();
+        }
+
+        buyBtn.addEventListener("click", () => {
+            alert('Đã mua thành công');
+        });
+    </script>
+</body>
+</html>
